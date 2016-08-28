@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/mauri870/cryptolock/crypto"
+	"github.com/mauri870/cryptofile/crypto"
 )
 
 var ()

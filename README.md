@@ -1,4 +1,4 @@
-# Cryptolock
+# Cryptofile
 
 Encrypt or decrypt files using AES-256 or AES-128
 
@@ -6,16 +6,16 @@ Encrypt or decrypt files using AES-256 or AES-128
 
 ## Installation
 ```
- go get -v github.com/mauri870/cryptolock
- go install github.com/mauri870/cryptolock
+ go get -v github.com/mauri870/cryptofile
+ go install github.com/mauri870/cryptofile
 ```
 
 # Usage
-Use `cryptolock -h` for a complete list of flags
+Use `cryptofile -h` for a complete list of flags
 
 ```
 echo Hello World! > filetoencrypt.txt
-cryptolock -key Your32or16bytesAlphanumericKey -in filetoencrypt.txt
-cryptolock -decrypt -key Your32or16bytesAlphanumericKey -in filetoencrypt.txt.enc
+cryptofile -key Your32or16bytesAlphanumericKey -in filetoencrypt.txt
+cryptofile -decrypt -key Your32or16bytesAlphanumericKey -in filetoencrypt.txt.encrypted
 ```
 You can also use `-delete` to remove the input file
