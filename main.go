@@ -47,7 +47,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	ioutil.WriteFile(*in+".enc", ciphertext, 0600)
+	ioutil.WriteFile(*in+".encrypted", ciphertext, 0600)
 }
 
 func checkKeyLength(key string) []byte {
