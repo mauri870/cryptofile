@@ -30,8 +30,8 @@ func Encrypt(key, text []byte) ([]byte, error) {
 	return []byte(hex.EncodeToString(ciphertext)), nil
 }
 
-func Decrypt(key, cyphertext []byte) ([]byte, error) {
-	text, _ := hex.DecodeString(string(cyphertext))
+func Decrypt(key, ciphertext []byte) ([]byte, error) {
+	text, _ := hex.DecodeString(string(ciphertext))
 	block, err := aes.NewCipher(key)
 	if err != nil {
 		return nil, err
