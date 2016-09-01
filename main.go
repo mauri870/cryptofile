@@ -51,7 +51,7 @@ func main() {
 }
 
 func checkKeyLength(key string) []byte {
-	if key == "" || (len(key) != 32 && len(key) != 16) {
+	if key == "" || (len(key) != 32 && len(key) != 16 && len(key) != 24) {
 		log.Println("Use -h for usage")
 		log.Fatalln(crypto.ErrorKeyInvalidLength)
 	}

@@ -1,6 +1,6 @@
 # Cryptofile
 
-Encrypt or decrypt files using AES-256 or AES-128
+Encrypt or decrypt files using AES-256-CFB, AES-192-CFB AES-128-CFB
 
 > Caution when using with the -delete flag, if you miss the key used for encrypt your file probably you never decrypt it
 
